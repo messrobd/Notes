@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Rob's notes</title>
+  </head>
+  <body>
+    <h4>Web terms & anatomy</h4>
+    <ul>
+      <li><b>html</b> = hypertext markup language. the language in which webpages/documents are written</li>
+      <ul>
+        <li><b>markup</b> = what the page looks like</li>
+      </ul>
+      <li><b>url</b> = location of a document </li>
+      <li><b>http</b> = protocol (hypertext transfer) by which a browser makes requests to servers </li>
+      <li><b>www</b> is basically an enormous (billions) collection of html documents </li>
+      <li>the parts of the internet system:
+        <div><img src="components.png" height="150" alt="whoops"></div>
+        <p>
+          <ul>
+            <li>A = the browser program on your computer</li>
+            <li>B = the internet</li>
+            <li>C = http requests</li>
+            <li>D = the server, on which the webpage ultimately resides</li>
+          </ul>
+        </p>
+      </li>
+      <li>this is <b>not</b> a webpage - there is no server here, just a file on a computer</li>
+    </ul>
+    <h4>Elements & tags</h4>
+    <ul>
+      <li>anchors (<b>&lt;a&gt;</b>) are for making links</li>
+      <ul>
+        <li>usually (always?) they have an attribute "href" with the url as its value</li>
+        <li>the text between the tags is what's written in the page</li>
+      </ul>
+      <li><b>&lt;img&gt;</b> is for images</li>
+      <ul>
+        <li>the <b>alt</b> value will be shown if the <b>src</b> value (the image file and path) can't be found/loaded</li>
+        <li>the image path can be a file name if it is stored in the same place as the document. otherwise it will probably be a url</li>
+      </ul>
+      <li>there are lots of tags for formatting, eg <b>&lt;b&gt;</b>, <em>&lt;em&gt;</em>, <strong>&lt;strong&gt;</strong></li>
+      <li>most elements, including the aforementioned formatted elements, must have closing tags (eg <b>&lt;/b&gt;</b>) to mark the end of the element. if omitted, the change invoked by the opening tag will continue indefinitely (the computer is only as smart as the code you write)</li>
+    </ul>
+    <h4>Arranging text (basic)</h4>
+    <ul>
+      <li>unless otherwise instructed, the browser will render the text as a continuous line, wrapping only when it gets to the edge of the window</li>
+      <li>line breaks & white space have to be added with markup</li>
+      <li>many elements, including <b>&lt;img&gt;</b> and <b>&lt;a&gt;</b> are likewise <em>inline</em></li>
+      <li><b>&lt;span&gt;</b> is used to define an inline section, eg for applying a set of custom formatting attributes</li>
+      <li>there are also <em>block</em> tags, which define sections with height and width - invisible boxes - eg: </li>
+      <ul>
+        <li><b>&lt;p&gt;</b> defines a new paragraph, with white space between it and the previous paragraph</li>
+        <li><b>&lt;div&gt;</b> defines a new block, without inserting any white space</li>
+      </ul>
+      <li><b>&lt;br&gt;</b> inserts a line break, but does not create a text block</li>
+    </ul>
+    <h4>Coding standards for HTML documents</h4>
+    <ul>
+      <li>you can just render text in a browser, with or without html, but a complete html doc should contain standard information that the browser needs:</li>
+      <ul>
+        <li><b>&lt;!DOCTYPE html&gt;</b> declares that this is an html document (strictly speaking it means html 5; html 4.01 comes in 3 highly verbose flavours)</li>
+        <li><b>&lt;html&gt;</b> contains all the actual html code on the page, in 2 subsections:</li>
+        <ul>
+          <li><b>&lt;head&gt;</b> contains metadata, including the page title and references to CSS and script files</li>
+          <li><b>&lt;body&gt;</b> contains all the content</li>
+        </ul>
+      </ul>
+      <li>if you create an empty html file <em>Atom</em> has a helpful template that you can use to set up the doc outline</li>
+      <li>html also has indenting standards as described in depth <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/b920608d-be3c-4d5f-851f-6ab3eeb8997b/modules/8f2b6689-b7fd-4c54-9c13-99bb29278990/lessons/404b6925-2a6e-4617-8818-3bd890906f75/concepts/e40b5612-4666-46d5-aaab-581d28d00daf">here</a></li>
+    </ul>
+    <h4>References</h4>
+    <div><a href="https://www.w3schools.com/tags/">Tag catalog (w3schools)</a></div>
+    <div><a href="https://www.freeformatter.com/html-escape.html">Escape characters (freeformatter)</a></div>
+
+  </body>
+</html>
