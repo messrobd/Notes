@@ -1,3 +1,6 @@
 .list-no-bullet {
   list-style: none;
 }
+#references {
+  background-color: lightgrey;
+}
