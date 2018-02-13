@@ -1,6 +1,28 @@
-.list-no-bullet {
-  list-style: none;
+div {
+  margin-left: 24px;
+  font-family: gill sans,sans-serif;
+}
+.lesson {
+  padding-top: 20px;
+  border-bottom-style: solid;
+  border-bottom-width: 1px;
 }
 #references {
+  padding-top: 16px;
   background-color: lightgrey;
+}
+h3 {
+  margin-top: 0px;
+}
+ul {
+  margin-top: 8px;
+}
+.ul-no-bullet {
+  list-style: none;
+}
+.clarification {
+  color: red;
+}
+.snippet {
+  font-family: monospace;
 }

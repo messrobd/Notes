@@ -87,6 +87,7 @@
   <div class="lesson">
     <h3>Lesson 2</h3>
     <div>
+      <h3>Intro to styling</h3>
       <ul>
         <li>if html defines the structure of a web page, then</li>
         <ul>
@@ -101,28 +102,66 @@
         <ul>
           <li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/explore.html">Explore</a></li>
           <li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/style-2.html">Style 2</a></li>
+          <li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/shapes.html">Shapes</a></li>
         </ul>
         <li>each html tag creates an element in the domain object model that the browser uses to display the page</li>
         <ul>
           <li>the DOM is viewed as a tree</li>
         </ul>
+        <li>&lt;div&gt;'s define the structure of a webpage by dividing it into boxes, or a hierarchy of boxes. pros will "boxify" a webpage design or mock-up with a pencil prior to writing actual html</li>
+      </ul>
+      <h4>CSS</h4>
+      <ul>
         <li>CSS = cascading style sheet</li>
         <ul>
+          <li>"cascading" means that rules are applied not only to the elements they directly match but
+          also to all the child elements of those elements - tree-wise. but a child element can have a
+          specific rule that takes precedent</li>
           <li><b>class</b> attribute is used to define a common style in the CSS</li>
         </ul>
-        <li>course examples:</li>
-        <ul>
-          <li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/shapes.html">Shapes</a></li>
-        </ul>
-        <li>&lt;div&gt;'s define the structure of a webpage by dividing it into boxes, or a hierarchy of boxes. pros will "boxify" a webpage design or mock-up with a pencil prior to writing actual html</li>
+        <li>you have to include a LINK element in the head element of your page that refers to the style sheet</li>
+          <ul>
+            <li>they have to be adjacent in the server file system</li>
+          </ul>
+        <li>styling can be done in several places, and are applied in the following order:</li>
+        <ol>
+          <li>the default style of the browser</li>
+          <li>style sheet in a separate file</li>
+          <li>stylesheet inside html (possible for small projects but not ideal)</li>
+          <li>inline style inside an element (not recommended)</li>
+        </ol>
+        <li><span class="clarification">given that inline styling is not recommended, I guess &lt;span&gt;'s have to be used heavily</span></li>
+        <li>selectors can be:</li>
+          <ul>
+            <li>direct references to html elements, eg "h1" or "p"</li>
+            <li>a leading "." creates a reference to a class, eg ".whatever". I guess it wouldn't matter if the class is not referred to in the html</li>
+            <ul>
+              <li>many elements can belong to the same class (<span class="snippet">&lt;div class="whatever"&gt;)</span></li>
+            </ul>
+            <li>a leading "#" creates a reference to a id, eg "#pagetitle". I guess it wouldn't matter if the id is not referred to in the html</li>
+            <ul>
+              <li>ID's have to be unique (<span class="snippet">&lt;div id="PageTitle"&gt;)</span></li>
+            </ul>
+            <li>"*" seems to create a global setting</li>
+          </ul>
+        <li>heading elements (h1 etc) are also used by search engines when indexing content</li>
       </ul>
     </div>
   </div>
   <div id="references">
-    <h4>References</h4>
-    <ul class="list-no-bullet">
+    <h3>References</h3>
+    <ul class="ul-no-bullet">
       <li><a href="https://www.w3schools.com/tags/">Tag catalog (w3schools)</a></li>
       <li><a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML">Escape characters (wikipedia)</a></li>
+      <li><a href="http://css-tricks.com/how-css-selectors-work/">CSS selectors (css-tricks)</a></li>
+      <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox properties (css-tricks)</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS (MDN)</a></li>
+      <li><a href="https://www.w3schools.com/css/css_syntax.asp">CSS syntax (w3schools)</a></li>
+      <li><a href="http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Colour design &amp; codes</a></li>
+      <li><a href="https://www.w3.org/Style/Examples/007/fonts.en.html">Font catalog</a></li>
+      <li><a href="https://baconipsum.com/">Comedy placeholder text</a></li>
+      <li><a href="https://validator.w3.org/#validate_by_input">HTML / markup verification</a> </li>
+      <li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS verification</a></li>
     </ul>
   </div>
 
