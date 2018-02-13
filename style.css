@@ -2,6 +2,9 @@ div {
   margin-left: 24px;
   font-family: gill sans,sans-serif;
 }
+.page {
+  margin-left: 0px;
+}
 .lesson {
   padding-top: 20px;
   border-bottom-style: solid;
@@ -11,7 +14,10 @@ div {
   padding-top: 16px;
   background-color: lightgrey;
 }
-h3 {
+.invisible {
+  display: none;
+}
+h2 {
   margin-top: 0px;
 }
 ul {
