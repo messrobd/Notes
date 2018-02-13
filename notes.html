@@ -1,77 +1,169 @@
 <!DOCTYPE html>
 <html>
-  <head>
-    <meta charset="utf-8">
-    <title>Rob's notes</title>
-  </head>
-  <body>
-    <h4>Web terms & anatomy</h4>
-    <ul>
-      <li><b>html</b> = hypertext markup language. the language in which webpages/documents are written</li>
+<head>
+  <meta charset="utf-8">
+  <title>Rob's notes</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="lesson">
+    <h3>Lesson 1</h3>
+    <div>
+      <h4>Web terms &amp; anatomy</h4>
       <ul>
-        <li><b>markup</b> = what the page looks like</li>
-      </ul>
-      <li><b>url</b> = location of a document </li>
-      <li><b>http</b> = protocol (hypertext transfer) by which a browser makes requests to servers </li>
-      <li><b>www</b> is basically an enormous (billions) collection of html documents </li>
-      <li>the parts of the internet system:
-        <div><img src="components.png" height="150" alt="whoops"></div>
-        <p>
-          <ul>
-            <li>A = the browser program on your computer</li>
-            <li>B = the internet</li>
-            <li>C = http requests</li>
-            <li>D = the server, on which the webpage ultimately resides</li>
-          </ul>
-        </p>
-      </li>
-      <li>this is <b>not</b> a webpage - there is no server here, just a file on a computer</li>
-    </ul>
-    <h4>Elements & tags</h4>
-    <ul>
-      <li>anchors (<b>&lt;a&gt;</b>) are for making links</li>
-      <ul>
-        <li>usually (always?) they have an attribute "href" with the url as its value</li>
-        <li>the text between the tags is what's written in the page</li>
-      </ul>
-      <li><b>&lt;img&gt;</b> is for images</li>
-      <ul>
-        <li>the <b>alt</b> value will be shown if the <b>src</b> value (the image file and path) can't be found/loaded</li>
-        <li>the image path can be a file name if it is stored in the same place as the document. otherwise it will probably be a url</li>
-      </ul>
-      <li>there are lots of tags for formatting, eg <b>&lt;b&gt;</b>, <em>&lt;em&gt;</em>, <strong>&lt;strong&gt;</strong></li>
-      <li>most elements, including the aforementioned formatted elements, must have closing tags (eg <b>&lt;/b&gt;</b>) to mark the end of the element. if omitted, the change invoked by the opening tag will continue indefinitely (the computer is only as smart as the code you write)</li>
-    </ul>
-    <h4>Arranging text (basic)</h4>
-    <ul>
-      <li>unless otherwise instructed, the browser will render the text as a continuous line, wrapping only when it gets to the edge of the window</li>
-      <li>line breaks & white space have to be added with markup</li>
-      <li>many elements, including <b>&lt;img&gt;</b> and <b>&lt;a&gt;</b> are likewise <em>inline</em></li>
-      <li><b>&lt;span&gt;</b> is used to define an inline section, eg for applying a set of custom formatting attributes</li>
-      <li>there are also <em>block</em> tags, which define sections with height and width - invisible boxes - eg: </li>
-      <ul>
-        <li><b>&lt;p&gt;</b> defines a new paragraph, with white space between it and the previous paragraph</li>
-        <li><b>&lt;div&gt;</b> defines a new block, without inserting any white space</li>
-      </ul>
-      <li><b>&lt;br&gt;</b> inserts a line break, but does not create a text block</li>
-    </ul>
-    <h4>Coding standards for HTML documents</h4>
-    <ul>
-      <li>you can just render text in a browser, with or without html, but a complete html doc should contain standard information that the browser needs:</li>
-      <ul>
-        <li><b>&lt;!DOCTYPE html&gt;</b> informs the browser that this is an html document (strictly speaking it means html 5; html 4.01 comes in 3 highly verbose flavours)</li>
-        <li><b>&lt;html&gt;</b> contains all the actual html code on the page, in 2 subsections:</li>
+        <li><b>html</b> = hypertext markup language. the language in which webpages/documents are written</li>
         <ul>
-          <li><b>&lt;head&gt;</b> contains metadata, including the page title and references to CSS and script files</li>
-          <li><b>&lt;body&gt;</b> contains all the content</li>
+          <li><b>markup</b> = what the page looks like</li>
         </ul>
+        <li><b>url</b> = location of a document </li>
+        <li><b>http</b> = protocol (hypertext transfer) by which a browser makes requests to servers </li>
+        <li><b>www</b> is basically an enormous (billions) collection of html documents </li>
+        <li>the parts of the internet system:
+          <div><img src="components.png" height="150" alt="whoops"></div>
+          <p>
+            <ul>
+              <li>A = the browser program on your computer</li>
+              <li>B = the internet</li>
+              <li>C = http requests</li>
+              <li>D = the server, on which the webpage ultimately resides</li>
+            </ul>
+          </p>
+        </li>
+        <li>this is <b>not</b> a webpage - there is no server here, just a file on a computer</li>
       </ul>
-      <li>if you create an empty html file <em>Atom</em> has a helpful template that you can use to set up the doc outline</li>
-      <li>html also has indenting standards as described in depth <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/b920608d-be3c-4d5f-851f-6ab3eeb8997b/modules/8f2b6689-b7fd-4c54-9c13-99bb29278990/lessons/404b6925-2a6e-4617-8818-3bd890906f75/concepts/e40b5612-4666-46d5-aaab-581d28d00daf">here</a></li>
+    </div>
+    <div>
+      <h4>Elements &amp; tags</h4>
+      <ul>
+        <li>anchors (<b>&lt;a&gt;</b>) are for making links</li>
+        <ul>
+          <li>usually (always?) they have an attribute "href" with the url as its value</li>
+          <li>the text between the tags is what's written in the page</li>
+        </ul>
+        <li><b>&lt;img&gt;</b> is for images</li>
+        <ul>
+          <li>the <b>alt</b> value will be shown if the <b>src</b> value (the image file and path) can't be found/loaded</li>
+          <li>the image path can be a file name if it is stored in the same place as the document. otherwise it will probably be a url</li>
+        </ul>
+        <li>there are lots of tags for formatting, eg <b>&lt;b&gt;</b>, <em>&lt;em&gt;</em>, <strong>&lt;strong&gt;</strong></li>
+        <li>most elements, including the aforementioned formatted elements, must have closing tags (eg <b>&lt;/b&gt;</b>) to mark the end of the element. if omitted, the change invoked by the opening tag will continue indefinitely (the computer is only as smart as the code you write)</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Arranging text (basic)</h4>
+      <ul>
+        <li>unless otherwise instructed, the browser will render the text as a continuous line, wrapping only when it gets to the edge of the window</li>
+        <li>line breaks &amp; white space have to be added with markup</li>
+        <li>many elements, including <b>&lt;img&gt;</b> and <b>&lt;a&gt;</b> are likewise <em>inline</em></li>
+        <li><b>&lt;span&gt;</b> is used to define an inline section, eg for applying a set of custom formatting attributes</li>
+        <li>there are also <em>block</em> tags, which define sections with height and width - invisible boxes - eg: </li>
+        <ul>
+          <li><b>&lt;p&gt;</b> defines a new paragraph, with white space between it and the previous paragraph</li>
+          <li><b>&lt;div&gt;</b> defines a new block, without inserting any white space</li>
+          <ul>
+            <li>looks like actual websites are basically built out of &lt;div&gt;'s</li>
+          </ul>
+        </ul>
+        <li><b>&lt;br&gt;</b> inserts a line break, but does not create a text block</li>
+      </ul>
+    </div>
+    <div>
+      <h4>Coding standards for HTML documents</h4>
+      <ul>
+        <li>you can just render text in a browser, with or without html, but a complete html doc should contain standard information that the browser needs:</li>
+        <ul>
+          <li><b>&lt;!DOCTYPE html&gt;</b> informs the browser that this is an html document (strictly speaking it means html 5; html 4.01 comes in 3 highly verbose flavours)</li>
+          <li><b>&lt;html&gt;</b> contains all the actual html code on the page, in 2 subsections:</li>
+          <ul>
+            <li><b>&lt;head&gt;</b> contains metadata, including the page title and references to CSS and script files</li>
+            <li><b>&lt;body&gt;</b> contains all the content</li>
+          </ul>
+        </ul>
+        <li>if you create an empty html file <em>Atom</em> has a helpful template that you can use to set up the doc outline</li>
+        <li>html also has indenting standards as described in depth <a href="https://classroom.udacity.com/nanodegrees/nd000/parts/b920608d-be3c-4d5f-851f-6ab3eeb8997b/modules/8f2b6689-b7fd-4c54-9c13-99bb29278990/lessons/404b6925-2a6e-4617-8818-3bd890906f75/concepts/e40b5612-4666-46d5-aaab-581d28d00daf">here</a></li>
+      </ul>
+    </div>
+  </div>
+  <div class="lesson">
+    <h3>Lesson 2</h3>
+    <div>
+      <h3>Intro to styling</h3>
+      <ul>
+        <li>if html defines the structure of a web page, then</li>
+        <ul>
+          <li>css = style of webpages</li>
+          <li>javascript = interactive elements</li>
+        </ul>
+        <li>use dev tools to introspect structure of live pages, as the browser interprets them</li>
+        <ul>
+          <li>you can change the properties on the fly, even of sites like wikipedia</li>
+        </ul>
+        <li>course examples:</li>
+        <ul>
+          <li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/explore.html">Explore</a></li>
+          <li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/style-2.html">Style 2</a></li>
+          <li><a href="http://assignments.udacity-extras.appspot.com/courses/html-css/samples/shapes.html">Shapes</a></li>
+        </ul>
+        <li>each html tag creates an element in the domain object model that the browser uses to display the page</li>
+        <ul>
+          <li>the DOM is viewed as a tree</li>
+        </ul>
+        <li>&lt;div&gt;'s define the structure of a webpage by dividing it into boxes, or a hierarchy of boxes. pros will "boxify" a webpage design or mock-up with a pencil prior to writing actual html</li>
+      </ul>
+      <h4>CSS</h4>
+      <ul>
+        <li>CSS = cascading style sheet</li>
+        <ul>
+          <li>"cascading" means that rules are applied not only to the elements they directly match but
+          also to all the child elements of those elements - tree-wise. but a child element can have a
+          specific rule that takes precedent</li>
+          <li><b>class</b> attribute is used to define a common style in the CSS</li>
+        </ul>
+        <li>you have to include a LINK element in the head element of your page that refers to the style sheet</li>
+          <ul>
+            <li>they have to be adjacent in the server file system</li>
+          </ul>
+        <li>styling can be done in several places, and are applied in the following order:</li>
+        <ol>
+          <li>the default style of the browser</li>
+          <li>style sheet in a separate file</li>
+          <li>stylesheet inside html (possible for small projects but not ideal)</li>
+          <li>inline style inside an element (not recommended)</li>
+        </ol>
+        <li><span class="clarification">given that inline styling is not recommended, I guess &lt;span&gt;'s have to be used heavily</span></li>
+        <li>selectors can be:</li>
+          <ul>
+            <li>direct references to html elements, eg "h1" or "p"</li>
+            <li>a leading "." creates a reference to a class, eg ".whatever". I guess it wouldn't matter if the class is not referred to in the html</li>
+            <ul>
+              <li>many elements can belong to the same class (<span class="snippet">&lt;div class="whatever"&gt;)</span></li>
+            </ul>
+            <li>a leading "#" creates a reference to a id, eg "#pagetitle". I guess it wouldn't matter if the id is not referred to in the html</li>
+            <ul>
+              <li>ID's have to be unique (<span class="snippet">&lt;div id="PageTitle"&gt;)</span></li>
+            </ul>
+            <li>"*" seems to create a global setting</li>
+          </ul>
+        <li>heading elements (h1 etc) are also used by search engines when indexing content</li>
+      </ul>
+    </div>
+  </div>
+  <div id="references">
+    <h3>References</h3>
+    <ul class="ul-no-bullet">
+      <li><a href="https://www.w3schools.com/tags/">Tag catalog (w3schools)</a></li>
+      <li><a href="https://en.wikipedia.org/wiki/List_of_XML_and_HTML_character_entity_references#Character_entity_references_in_HTML">Escape characters (wikipedia)</a></li>
+      <li><a href="http://css-tricks.com/how-css-selectors-work/">CSS selectors (css-tricks)</a></li>
+      <li><a href="https://css-tricks.com/snippets/css/a-guide-to-flexbox/">Flexbox properties (css-tricks)</a></li>
+      <li><a href="https://developer.mozilla.org/en-US/docs/Web/CSS/Reference">CSS (MDN)</a></li>
+      <li><a href="https://www.w3schools.com/css/css_syntax.asp">CSS syntax (w3schools)</a></li>
+      <li><a href="http://paletton.com/#uid=1000u0kllllaFw0g0qFqFg0w0aF">Colour design &amp; codes</a></li>
+      <li><a href="https://www.w3.org/Style/Examples/007/fonts.en.html">Font catalog</a></li>
+      <li><a href="https://baconipsum.com/">Comedy placeholder text</a></li>
+      <li><a href="https://validator.w3.org/#validate_by_input">HTML / markup verification</a> </li>
+      <li><a href="http://jigsaw.w3.org/css-validator/#validate_by_input">CSS verification</a></li>
     </ul>
-    <h4>References</h4>
-    <div><a href="https://www.w3schools.com/tags/">Tag catalog (w3schools)</a></div>
-    <div><a href="https://www.freeformatter.com/html-escape.html">Escape characters (freeformatter)</a></div>
+  </div>
 
-  </body>
+</body>
 </html>
